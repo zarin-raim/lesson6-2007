@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{984418E4-DD1A-4EF4-B691-CFE6A071F6FE}</ProjectGuid>
+    <ProjectGuid>{8E6948D7-4833-43BB-A944-A23223A6AA6C}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>pr1</RootNamespace>
-    <AssemblyName>pr1</AssemblyName>
+    <RootNamespace>StoskSystem</RootNamespace>
+    <AssemblyName>StoskSystem</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -42,6 +42,12 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\StockLibrary\StockLibrary.csproj">
+      <Project>{a9ae33b5-5a66-4a11-a4af-4aaf60a0cb0c}</Project>
+      <Name>StockLibrary</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
